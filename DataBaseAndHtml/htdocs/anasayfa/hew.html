@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hızlı Erişim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+.main {
+  background-image: url('background/17.jpg');
+  height:100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+.ss{
+    background-image: url('hew/discordhewlog.png');
+    background-position:center bottom;
+
+    width: 198px;
+    height: 138px;
+    background-repeat: no-repeat;
+
+    background-size: 175px;
+    background-color: transparent;
+    text-align: center ;
+    padding-top:115px;
+    color: transparent;
+    border:none;
+    outline:none;
+    box-shadow:none;
+}
+.ss:pressed{ border:none;outline:none;box-shadow:none; }
+.cont{
+    position: fixed;
+    left: 470px;
+    top: 250px;
+}
+.googlewdgt{
+    position: fixed;
+    left: 390px;
+    top: 150px;
+    width: 35px;
+    height:35px;
+    background-image: url('hew/search.png');
+    background-position:center;
+    border-color:transparent;
+    background-repeat: no-repeat;
+
+    background-size: 35px;
+    background-color: transparent;
+}
+.ss:hover{
+background-position:center ;color: white;
+}
+.txtline{
+    position: fixed;
+    left: 430px;
+    top: 150px;
+    width: 715px;
+    height:40px;
+    background-color:transparent;
+    padding-left:20px;
+    border: 2px solid;
+    border-color:transparent transparent  rgb(240,255,255) transparent;
+    outline: none;
+    color: white;
+
+}
+.txtline:focus {color: white;background-color:transparent;outline:none;box-shadow: none;border-color:transparent transparent  white transparent; }
+
+
+</style>
+
+</head>
+<body>
+<!--Menu tasarım kısmı-->
+<div class="main" style="">
+    <div>
+    <div class="googlewdgt"></div>
+    <input  type="text" class="form-control txtline" id="menu" placeholder="Google'da Ara" aria-label="Username" aria-describedby="addon-wrapping" onkeydown="search()">
+    <div class="container cont">
+        <div class="row row-cols-3">
+            <button class="col ss fw-bold" style="background-image: url('hew/youtubehewlog.png');" onclick="youtubeclick()">Youtube</button>
+            <button class="col ss fw-bold"  onclick="discordclick()" >Discord</button>
+            <button class="col ss fw-bold" style="background-image: url('hew/gmailhewlog.png');" onclick="gmailclick()">Gmail</button>
+
+        </div>
+        <div class="row row-cols-3">
+            <button class="col ss fw-bold" style="background-image: url('hew/twitterhewlog.png');" onclick="twitterclick()">Twitter</button>
+            <button class="col ss fw-bold" style="background-image: url('hew/twitchhewlog.png');" onclick="twitchclick()">Twitch</button>
+            <button class="col ss fw-bold" style="background-image: url('hew/facebookhewlog.png');" onclick="facebookclick()">Facebook</button>
+
+        </div>
+    </div>
+        </div>
+</div>
+<script>
+    <!-- Arama yapılırsa çağrılacak script-->
+    function search() {
+    if(event.keyCode === 13) {var ad=document.getElementById("menu").value;
+        location.href = `https://www.google.com/search?q=${ad}`;
+    }
+}</script>
+<!--Butonların bağlantı scriptleri-->
+<script>function youtubeclick(){location.href = "https://youtube.com";}</script>
+<script>function discordclick(){location.href = "https://discord.com";}</script>
+<script>function gmailclick(){location.href = "https://gmail.com";}</script>
+<script>function twitterclick(){location.href = "https://twitter.com";}</script>
+<script>function twitchclick(){location.href = "https://twitch.tv";}</script>
+<script>function facebookclick(){location.href = "https://twitch.tv";}</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
