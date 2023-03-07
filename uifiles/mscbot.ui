@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>261</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{background-image: url('C:/xampp/htdocs/anasayfa/background/deneme1a.jpg');
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;}</string>
+  </property>
+  <widget class="QWidget" name="main" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>251</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="center" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>241</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="muzikimg">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>0</y>
+       <width>110</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+text-align:center;
+	background-color: rgb(146, 226, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QFrame" name="progresssong">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>190</y>
+       <width>241</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QSlider" name="filetime">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>10</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal {
+    border-radius: 1px;
+    height: 3px;
+    margin: 0px;
+    background-color: rgb(52, 59, 72);
+}
+QSlider::groove:horizontal:hover {
+    background-color: rgb(55, 62, 76);
+}
+QSlider::handle:horizontal {
+    background-color: rgb(85, 170, 255);
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin: -6px 0;
+    border-radius: 7px;
+    padding: -6px 0px;
+}
+QSlider::handle:horizontal:hover {
+    background-color: rgb(155, 180, 255);
+}
+QSlider::handle:horizontal:pressed {
+    background-color: rgb(65, 255, 195);
+}</string>
+      </property>
+      <property name="value">
+       <number>12</number>
+      </property>
+      <property name="sliderPosition">
+       <number>12</number>
+      </property>
+      <property name="tracking">
+       <bool>true</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::NoTicks</enum>
+      </property>
+      <property name="tickInterval">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nowtime">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>19:30</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="endtime">
+      <property name="geometry">
+       <rect>
+        <x>211</x>
+        <y>10</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>19:39</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="playbtnset">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>121</y>
+       <width>241</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="srufflebtn">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border:1px solid ;
+border-radius:20px;
+}
+QPushButton:hover{
+background-color: rgba(150, 150, 150,0.5);
+border:1px solid ;
+border-radius:20px;
+
+}
+
+QPushButton:checked{
+background-color: rgba(150, 150, 150,1);
+border:1px  rgba(150, 150, 150,0.5); ;
+border-radius:15px;
+
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../icons/icons8-shuffle-48.png</normaloff>../icons/icons8-shuffle-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="backbtn">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border:1px solid ;
+border-radius:22px;
+}
+QPushButton:hover{
+background-color: rgba(150, 150, 150,0.5);
+border:1px solid ;
+border-radius:15px;
+
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../icons/icons8-back-forward-48.png</normaloff>../icons/icons8-back-forward-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="palybtn">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border:1px solid  ;
+	
+border-radius:27px;
+
+}
+QPushButton:hover{
+background-color: rgba(150, 150, 150,0.5);
+border:1px solid transparent ;
+border-radius:15px;
+}
+
+QPushButton:checked{
+background-color: rgba(150, 150, 150,1);
+border:1px solid transparent ;
+border-radius:15px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../icons/icons8-play-48.png</normaloff>../icons/icons8-play-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>35</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="forwardbtn">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border:1px solid ;
+border-radius:22px;
+}
+QPushButton:hover{
+background-color: rgba(150, 150, 150,0.5);
+border:1px solid ;
+border-radius:15px;
+
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../icons/icons8-fast-forward-48.png</normaloff>../icons/icons8-fast-forward-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="repeatbtn">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border:1px solid ;
+border-radius:20px;
+}
+QPushButton:hover{
+background-color: rgba(150, 150, 150,0.5);
+border:1px solid ;
+border-radius:20px;
+
+}
+
+QPushButton:checked{
+background-color: rgba(150, 150, 150,1);
+border:1px  rgba(150, 150, 150,0.5); ;
+border-radius:15px;
+
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../icons/icons8-repeat-one-48.png</normaloff>../icons/icons8-repeat-one-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QSlider" name="musicvalue">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>6</y>
+       <width>21</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove:vertical{
+    border-radius: 1px;
+    width: 3px;
+    margin: 0px;
+    background-color: rgb(52, 59, 72);
+}
+QSlider::groove:vertical :hover {
+    background-color: rgb(55, 62, 76);
+}
+QSlider::handle:vertical{
+    background-color: rgb(85, 170, 255);
+    border: none;
+    height: 10px;
+    width: 10px;
+    margin: 0px -4px;
+    border-radius:5px;
+    padding: 0px -4px;
+}
+QSlider::handle:vertical :hover{
+    background-color: rgb(155, 180, 255);
+}
+QSlider::handle:vertical :pressed{
+    background-color: rgb(65, 255, 195);
+}</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="valuebtn">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border:1px solid transparent;
+border-radius:15px;
+}
+QPushButton:hover{
+background-color: rgb(95, 95, 95);
+
+}
+QPushButton:pressed{
+background-color: rgb(195,195, 195);
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../icons/mute (1).png</normaloff>../icons/mute (1).png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="head">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="list">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border:1px solid transparent;
+
+}
+QPushButton:hover{
+background-color:#d3d3d3;
+
+
+}
+
+QPushButton:pressed{
+background-color:#d5d1d3;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/icons8-align-left-48.png</normaloff>../icons/icons8-align-left-48.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closebtn">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>0</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border:1px solid transparent;
+
+}
+QPushButton:hover{
+ background-color: rgb(85, 170, 255);
+	background-color: rgb(255, 75, 39);
+
+
+}
+
+QPushButton:pressed{
+background-color:#d5d1d3;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/icons8-multiply-24.png</normaloff>../icons/icons8-multiply-24.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minimezebtn">
+    <property name="geometry">
+     <rect>
+      <x>201</x>
+      <y>0</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border:1px solid transparent;
+
+}
+QPushButton:hover{
+ background-color: rgb(85, 170, 255);
+
+
+}
+
+QPushButton:pressed{
+background-color:#d5d1d3;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/minimize.png</normaloff>../icons/minimize.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="musicname">
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>0</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
