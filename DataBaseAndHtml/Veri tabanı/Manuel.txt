@@ -1,0 +1,73 @@
+####
+###
+##Web ve webadminoruser veri tabanı create eklenecek
+
+
+
+CREATE TABLE `download` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`DTarih` DATETIME NULL DEFAULT NULL,
+	`DName` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=10
+;
+
+
+CREATE TABLE `history` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`HTarih` DATETIME NOT NULL,
+	`HPage` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=734
+;
+
+
+CREATE TABLE `support` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`email` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`baslik` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`icerik` TEXT NOT NULL COLLATE 'utf8mb4_general_ci',
+	`durum` VARCHAR(50) NULL DEFAULT 'kontrol edilmedi' COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=11
+;
+
+
+
+webadminoruser
+
+
+CREATE TABLE `admingrs` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`AdminUserName` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`password` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=3
+;
+
+
+
+CREATE TABLE `kytblgileri` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`kullaniciadi` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`email` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`password` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`hash` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`Id`, `hash`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=9
+;
